@@ -1,0 +1,23 @@
+here is how we did it:
+
+1. create a new site or login to an old one
+2. login and set sftp password
+3. login via sftp and create a symlink to /
+4. disable DirectoryIndex in .htaccess
+5. enable mod_autoindex in .htaccess
+6. disable php engine in .htaccess
+7. add text/plain type for .php files in .htaccess
+8. have fun browsing files
+9. find /home/fhosting
+10. look at the content of the index.php file in /home/fhosting/www/
+11. find configuration in /home/fhosting/www/_lbs/config.php
+12. copy paste database connection details to phpmyadmin login
+13. find active users with shell access in /etc/passwd
+14. look through the scripts and figure out how password resets work
+15. manually trigger a sftp password reset for the user 'user'
+16. connect via ssh
+17. run 'sudo -i'
+18. edit ssh config in /etc/ssh/sshd_config to allow root login
+19. run 'passwd' to set root password
+20. reconnect via ssh as root
+21. enjoy
